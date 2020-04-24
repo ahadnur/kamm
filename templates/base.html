@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'static/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>
         {% block title %}
         {% endblock %}
@@ -14,7 +14,24 @@
 <body>
     <header class="header">
         <h1>Khulna Ahsania mohila mission</h1>
+        <p>Sher-E-Bangla Road, Khulna</p>
     </header>
+    <div class="navbar">
+      <div class="brand">
+        <h1>KAMM</h1>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     {% block content %}
     {% endblock %}
 </body>
