@@ -13,24 +13,8 @@
     </title>
 </head>
 <body>
-    <header class="header">
-        <h1>Khulna Ahsania mohila mission</h1>
-        <p>9 no Sher-E-Bangla Road, Khulna</p>
-    </header>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">Our Programs
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-      </div> 
-    </div>
+    {% include 'pages/partials/_header.html' %}
+    {% include 'pages/partials/_nav.html' %}
     {% block content %}
     {% endblock %}
     <script src="{% static 'js/main.js' %}"></script>

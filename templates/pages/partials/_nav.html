@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="navbar">
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'ch-autist' %}">charitable autist</a>
+    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Our Programs 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">sanitation Program</a>
+      <a href="#">health program</a>
+      <a href="#">hiv/aids program (awarness)</a>
+      <a href="#">handicraft program</a>
+      <a href="#">education program</a>
+    </div>
+    </div>
+    <div class="right-section">
+      <a href="{% url 'contact' %}">Contact</a>
+      <a href="{% url 'about-us' %}">about us</a>
+    </div>
+  </div>
