@@ -11,7 +11,7 @@ body{
 }
 
 .header{
-    background-color: rgba(153, 46, 254, 0.74);
+    background-color: rgba(46, 254, 167, 0.74);
     height: 20vh;
     color: cornsilk;
     text-align: center;
@@ -134,5 +134,4 @@ body{
     list-style: decimal;
 
 }
-
 /* Emd About page section */

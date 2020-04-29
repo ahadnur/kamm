@@ -15,3 +15,4 @@ def contact(request):
 
 def ch_autist(request):
     return render(request, 'pages/ch_autist.html')
+
