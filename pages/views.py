@@ -16,3 +16,6 @@ def contact(request):
 def ch_autist(request):
     return render(request, 'pages/ch_autist.html')
 
+def running_programs(request):
+    return render(request, 'pages/running_programs.html')
+

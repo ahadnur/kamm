@@ -1,19 +1,32 @@
 {% extends 'base.html' %}
+{% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}
-            Contact Us
-        {% endblock %}
-    </title>
-</head>
-<body>
-    {% block content %}
-        <h1>This is our Contact page</h1>
-    {% endblock %}
-</body>
-</html>
+
+{% block title %}
+    Contact Us
+{% endblock %}
+
+
+{% block content %}
+    <div class="contact-section">
+        <h1 class="contact-header">
+            Contact with us
+        </h1>
+        <hr class="line">
+
+        <div class="contact-details">
+            <div class="contact-secratery">
+                <h3 class="name">Nilufar Haque</h3>
+                <p class="designation">Secretary</p>
+                <p class="number">+8801715269537</p>
+            </div>
+            <div class="contact-doctor">
+                <h3 class="name">Dr. firoja hasan</h3>
+                <p class="designation">doctor</p>
+                <p class="number">+8801962046390</p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="mail">Email us at khahmomis@gmail.com</div>
+    </div>
+{% endblock %}
