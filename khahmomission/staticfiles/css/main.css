@@ -28,11 +28,11 @@ body{
 /* Footer section */
 .my-foot{
     background-color: blueviolet;
-    height: 10vh;
+    height: 6vh;
     text-align: center;
     font-size: 16px;
     font-weight: 800;
-    padding: 20px;
+    padding: 10px;
     color: cornsilk;
     margin-top: 20px;
     letter-spacing: 2px;
@@ -49,7 +49,7 @@ body{
 
 .navbar {
     overflow: hidden;
-    background-color: rgb(23, 8, 48);
+    background-color: rgb(19, 10, 32);
     padding: 0px 100px;
     text-transform: uppercase;
 }
@@ -150,6 +150,7 @@ body{
     margin-top: 30px;
     font-size: 20px;
     padding: 0px 20px;
+    margin-bottom: 30px;
 }
 
 .about-item{
@@ -254,3 +255,29 @@ body{
 }
 
 /* End Ch-Autist section */
+
+
+@media (max-width: 767px){
+    .header {
+        height: 30vh;
+        font-size: 14px;
+        font-weight: 800;
+        padding: 30px 0px;
+    }
+    .my-foot{
+        font-size: 12px;
+        padding: 12px 0;
+    }
+    .about-section{
+        padding: 20px 40px;
+    }
+    .heading{
+        font-size: 18px;
+    }
+    .main-text{
+        font-size: 15px;
+    }
+    .about-list{
+        font-size: 14px;
+    }
+}
