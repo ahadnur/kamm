@@ -164,14 +164,6 @@ body{
     padding: 30px 100px;
 }
 
-.contact-header{
-    text-align: center;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding: 0px 100px;
-}
-
 .contact-details{
     display: flex;
     padding: 30px 0px;
@@ -222,11 +214,11 @@ body{
 
 .programs{
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .list-items{
     list-style: none;
-    font-size: 18px;
     
 }
 
@@ -255,26 +247,52 @@ body{
 /* End Ch-Autist section */
 
 
+
+/* Screen size optimization starts */
 @media (max-width: 767px){
+    /* Common items of styling */
     .header {
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 800;
         padding: 20px 10px;
+    }
+    .main-text{
+        font-size: 18px;
+    }
+    .heading{
+        font-size: 20px;
     }
     .my-foot{
         font-size: 12px;
         padding: 12px 0;
     }
+    /* End of common items */
+
+    /* Now the about page */
     .about-section{
         padding: 20px 40px;
     }
-    .heading{
-        font-size: 18px;
-    }
-    .main-text{
+    .about-list{
         font-size: 15px;
     }
-    .about-list{
-        font-size: 14px;
+    /* End of about page */
+
+    /* Now the charitable autist page */
+    .ch-autist{
+        padding: 20px 40px;
     }
+    .list-items{
+        font-size: 15px;
+    }
+    /* End of charitable autist page */
+
+    /* Now the running programs page */
+    .running-program{
+        padding: 20px 40px;
+    }
+    .programs{
+        font-size: 15px;
+    }
+    /* End of running programs page */
+
 }
