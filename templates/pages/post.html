@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    random title
+{% endblock %}
+
+{% block content %}
+    <div class="post__item">
+        <img src="#" alt="Image for post 1">
+        <h2 class="heading">{{ post.title }}</h2>
+        <p class="main-text">{{ post.description }}</p>
+        <p class="date__class">{{ post.date_posted }}</p>
+    </div>
+{% endblock %}
