@@ -13,7 +13,6 @@ body{
 /* Header section */
 .header{
     background-color: blueviolet;
-    height: 20vh;
     color: cornsilk;
     text-align: center;
     font-size: 20px;
@@ -28,10 +27,9 @@ body{
 /* Footer section */
 .my-foot{
     background-color: blueviolet;
-    height: 6vh;
     text-align: center;
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 600;
     padding: 10px;
     color: cornsilk;
     margin-top: 20px;
@@ -259,10 +257,9 @@ body{
 
 @media (max-width: 767px){
     .header {
-        height: 20vh;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 800;
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
     .my-foot{
         font-size: 12px;
