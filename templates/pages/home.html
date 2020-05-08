@@ -10,7 +10,7 @@
         <div class="cards">
             <h2 class="card_header">{{ post.title  }}</h2>
             <p class="card_description">{{ post.body_preview | safe }}...</p>
-            <p class="card_time">{{ post.date_posted | timesince }} ago.</p>
+            <p class="card_time">Posted {{ post.date_posted | timesince }} ago.</p>
             <a href="{% url 'post' pk=post.pk %}" class="btn">Show more</a>
         </div>
     </div>
