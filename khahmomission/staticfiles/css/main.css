@@ -293,26 +293,21 @@ body{
 }
 /* end of homepage section */
 
+/* ================================================= */
 /* Prorams Section started */
 /* Education program section */
-.edu__program{
+.edu__program, .hand__program, .health__program, .sanitation__program, .awarness__program{
     padding: 30px 100px;
 }
 /* End of education program */
 
 /* Handicraft Program Section */
-.hand__program{
-    padding: 30px 100px;
-}
 .hand__list{
     margin-top: 30px;
 }
 /* End of Handicraft Program */
 
 /* Health Program Section */
-.health__program{
-    padding: 30px 100px;
-}
 .health__program__list{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -320,20 +315,13 @@ body{
 /* End of health program section */
 
 /* Sanitation program section */
-.sanitation__program{
-    padding: 30px 100px;
-}
 .sanitation__list{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 /* End of sanitation program section */
+/* ================================================= */
 
-/* Awarness program section */
-.awarness__program{
-    padding: 30px 100px;
-}
-/* End of awarness program section */
 
 /* Screen size optimization starts */
 @media (max-width: 767px){
@@ -379,6 +367,10 @@ body{
     }
     .programs{
         font-size: 15px;
+    }
+    .edu__program, .hand__program, .health__program, .sanitation__program, .awarness__program{
+        padding: 20px 40px;
+        margin-bottom: 30px;
     }
     /* End of running programs page */
 
