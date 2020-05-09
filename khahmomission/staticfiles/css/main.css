@@ -20,6 +20,7 @@ body{
     padding: 20px 0px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    width: 100vw;
 }
 
 /* End Header section */
@@ -32,14 +33,13 @@ body{
     font-weight: 600;
     padding: 10px;
     color: cornsilk;
-    margin-top: 20px;
+    margin-top: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-
+    width: 100vw;
 }
 /* End Footer section */
 
@@ -50,6 +50,7 @@ body{
     background-color: rgb(19, 10, 32);
     padding: 0px 100px;
     text-transform: uppercase;
+    width: 100vw;
 }
   
 .navbar a {
@@ -117,6 +118,97 @@ body{
 }
 
 /* End Navbar section */
+
+
+/* Image slider section */
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+.slide .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h1{
+    margin-bottom: 10px;
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next{
+    position: absolute;
+    top: 80%;
+    right: 15px;
+}
+
+.buttons button#prev{
+    position: absolute;
+    top: 80%;
+    left: 15px;
+}
+
+.buttons button{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+/* Background Images */
+.slide:first-child{
+    background: url('../img/banner1.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2){
+    background: url('../img/banner2.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(3){
+    background: url('../img/banner3.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(4){
+    background: url('../img/banner4.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(5){
+    background: url('../img/banner5.jpg') no-repeat center top/cover;
+}
+/* End Image slider section */
 
 
 /* About page section */
@@ -342,6 +434,20 @@ body{
         padding: 12px 0;
     }
     /* End of common items */
+
+    /* Image slider */
+    .slide .content{
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content{
+        transform: translateY(-300px);
+    }
+    .buttons button#next, .buttons button#prev{
+        top: 95%;
+    }
+    /* End of Image slider */
 
     /* Now the about page */
     .about-section{
