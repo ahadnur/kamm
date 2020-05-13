@@ -445,6 +445,7 @@ nav ul li:hover ul{
     }
     .buttons button#next, .buttons button#prev{
         top: 95%;
+        outline: none;
     }
     /* End of Image slider */
 
